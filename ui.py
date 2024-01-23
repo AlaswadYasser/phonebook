@@ -1,5 +1,5 @@
 from logger import input_data, print_data 
-from new_tools import edit_data, delete_data
+from tools import edit_data, delete_data
 
 #  Главное меню программы
 def interface():
@@ -8,10 +8,10 @@ def interface():
     while command > 0:
         print(
             "МЕНЮ \n",
-            "1 - Просмотр данных \n",
-            "2 - Ввод данных \n",
-            "3 - Изменение данных \n",
-            "4 - Удаление данных \n",
+            "1 - Вывод данных \n",
+            "2 - Запись данных \n",
+            "3 - Изменить данных \n",
+            "4 - Удалить данных \n",
             "0 - Завершение работы",
         )
         command = int(input("\nВведите число: "))

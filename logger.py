@@ -18,11 +18,11 @@ def input_data():
     
     if var == 1:
         with open("data_first_variant.csv", 'a', encoding = "utf-8") as f:
-            f.write(f"{name}\n{surname}\n{phone}\n{address}\n\n")
+            f.write(f"\n{name}\n{surname}\n{phone}\n{address}\n")
 
     elif var == 2:
         with open("data_second_variant.csv", "a", encoding = "utf-8") as f:
-            f.write(f"{name};{surname};{phone};{address}\n\n")
+            f.write(f"\n{name};{surname};{phone};{address}\n")
     print("Спасибо, данные внесены.")
 
 # Чтения Данный из списка
