@@ -1,4 +1,3 @@
-#import os
 from ui import interface
 
 #  Вывод первоначального экрана на консоль

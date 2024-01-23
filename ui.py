@@ -12,13 +12,13 @@ def interface():
             "2 - Запись данных \n",
             "3 - Изменить данных \n",
             "4 - Удалить данных \n",
-            "0 - Завершение работы",
+            "5 - Завершение работы",
         )
         command = int(input("\nВведите число: "))
 
-        while command < 0 or command > 4:
+        while command < 1 or command > 5:
             print("Неправильный ввод!")
-            command = int(input("Введите число: "))
+            command = int(input("\nВведите число: "))
 
 
         match command:
@@ -30,5 +30,5 @@ def interface():
                 edit_data()
             case 4:
                 delete_data()
-            case 0:
+            case 5:
                 pass
