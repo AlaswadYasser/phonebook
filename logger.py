@@ -24,7 +24,7 @@ def input_data():
         with open("data_second_variant.csv", "a", encoding = "utf-8") as f:
             f.write(f"\n{name};{surname};{phone};{address}\n")
     print("Спасибо, данные внесены.")
-
+    print()
 # Чтения Данный из списка
 def print_data():
     print("Данные из первого файла: \n")
@@ -41,3 +41,4 @@ def print_data():
     with open("data_second_variant.csv", 'r', encoding ="utf-8") as f:
         data_second = f.readlines()
         print(*data_second)
+    print()
